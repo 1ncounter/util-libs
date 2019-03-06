@@ -1,0 +1,9 @@
+{
+  "name": "util-libs",
+  "version": "1.0.0",
+  "description": "some interesting utils in the library",
+  "main": "index.js",
+  "author": "Yang Jun <yj7126@yeah.net>",
+  "license": "MIT",
+  "private": true
+}
