@@ -2,8 +2,19 @@
   "name": "util-libs",
   "version": "1.0.0",
   "description": "some interesting utils in the library",
-  "main": "index.js",
+  "main": "index.ts",
   "author": "Yang Jun <yj7126@yeah.net>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "ts-node index.ts",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.9",
+    "jest": "^24.1.0",
+    "ts-jest": "^24.0.0",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3333"
+  }
 }
