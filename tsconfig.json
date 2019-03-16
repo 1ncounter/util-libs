@@ -4,6 +4,7 @@
     "experimentalDecorators": true,
     "module": "CommonJS",
     "moduleResolution": "node",
-    "typeRoots" : ["./node_modules/@types", "./typings"]
+    "target": "esnext",
+    "typeRoots": ["./node_modules/@types", "./typings"]
   }
 }

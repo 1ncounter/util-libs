@@ -1,3 +1,1 @@
-import { lcg } from './pakages/linear-congruential-generator/lcg';
-
-console.log(lcg(21315));
+import './pakages/promise/promise.spec';
