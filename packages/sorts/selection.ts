@@ -1,7 +1,7 @@
 export function selection(nums: number[]): number[] {
-  let len = nums.length;
-  let minIndex;
-  let temp;
+  let len: number = nums.length;
+  let minIndex: number;
+  let temp: number;
 
   for (let i = 0; i < len; i++) {
     minIndex = i;

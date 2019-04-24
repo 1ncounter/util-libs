@@ -1,5 +1,5 @@
 export function bubbleSort(nums: number[]): number[] {
-  let len = nums.length;
+  let len: number = nums.length;
 
   for (let i = 0; i < len; i++) {
     for (let j = 0; j < len - 1 - i; j++) {
