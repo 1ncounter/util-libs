@@ -5,6 +5,7 @@
     "module": "CommonJS",
     "moduleResolution": "node",
     "target": "esnext",
-    "typeRoots": ["./node_modules/@types", "./typings"]
+    "typeRoots": ["./node_modules/@types", "./typings"],
+    "sourceMap": true
   }
 }

@@ -8,10 +8,10 @@
       "type": "node",
       "request": "launch",
       "name": "Launch Program",
-      "program": "${workspaceFolder}/index.ts",
-      "outFiles": [
-        "${workspaceFolder}/**/*.js"
-      ]
+      "program": "${workspaceRoot}/node_modules/ts-node/dist/bin.js",
+      "args": ["${relativeFile}"],
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector"
     }
   ]
 }
