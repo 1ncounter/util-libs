@@ -5,6 +5,7 @@ import { createError } from '../core/createError';
 import { cookies } from '../helpers/cookies';
 import { buildURL } from '../helpers/buildURL';
 import { isURLSameOrigin } from '../helpers/isURLSameOrigin';
+import parseHeaders from '../helpers/parseHeaders';
 
 export const xhrAdapter = (config: AxiosRequestConfig): AxiosPromise => {
   return new Promise((resolve, reject) => {

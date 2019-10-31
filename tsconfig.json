@@ -6,6 +6,7 @@
     "moduleResolution": "node",
     "target": "esnext",
     "typeRoots": ["./node_modules/@types", "./typings"],
-    "sourceMap": true
+    "sourceMap": true,
+    "resolveJsonModule": true
   }
 }

@@ -1,8 +1,4 @@
-import {
-  AxiosRequestConfig,
-  AxiosInterceptorManager,
-  Interceptor
-} from '../typings';
+import { AxiosRequestConfig, Interceptor } from '../typings';
 import { dispatchRequest } from './dispatchRequest';
 import { InterceptorManager } from './interceptorManager';
 

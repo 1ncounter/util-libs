@@ -4,8 +4,8 @@ import { AxiosRequestConfig, AxiosResponse } from '../typings';
 export const createError = (
   message: string,
   config: AxiosRequestConfig,
-  code: string,
-  request: any,
+  code?: string,
+  request?: any,
   response?: AxiosResponse
 ) => {
   const error = new Error(message);

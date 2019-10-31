@@ -12,7 +12,7 @@ class Node<T> implements INode<T> {
 
 export class SinglyLinkedList<T> implements ILinkedList<T> {
   private head: Node<T> | null = null;
-  private size: number = 0;
+  size: number = 0;
 
   constructor() {
     const node = new Node<T>(null);
@@ -88,20 +88,20 @@ export class SinglyLinkedList<T> implements ILinkedList<T> {
   deleteAtIndex(index: number) {
     if (index > this.size - 1) return;
 
-    if (this.size === 1) {
-      this.head.value = null;
+    if (index === 0) {
+      this.head = this.head.next;
       return;
     }
 
-    let i = 1;
+    let i = 0;
     let prev = this.head;
 
-    while (i < index - 1) {
+    while (i < index + 1) {
       prev = prev.next;
       i++;
     }
 
-    prev.next = prev.next.next;
+    prev.next = prev.next ? prev.next.next : null;
     this.size--;
   }
 }

@@ -20,7 +20,7 @@ export function quick(nums: number[]): number[] {
     const baseVal = arr[j]; // 取无序数组最后一个数为基准值
 
     while (i < j) {
-      //把所有比基准值小的数放在左边大的数放在右边
+      //把所有比基准值小的数放在左边 大的数放在右边
       while (i < j && arr[i] <= baseVal) {
         //找到一个比基准值大的数交换
         i++;
