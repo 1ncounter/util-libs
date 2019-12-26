@@ -1,6 +1,6 @@
 import { INode, ILinkedList } from './linked-list.interface';
 
-class Node<T> implements INode<T> {
+export class Node<T> implements INode<T> {
   value: T | null;
   next: Node<T> | null;
 
@@ -11,7 +11,7 @@ class Node<T> implements INode<T> {
 }
 
 export class SinglyLinkedList<T> implements ILinkedList<T> {
-  private head: Node<T> | null = null;
+  head: Node<T> | null = null;
   size: number = 0;
 
   constructor() {
